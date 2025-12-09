@@ -1,15 +1,48 @@
-# 🧪 API Testing Framework
+# API Testing Framework
 
-Comprehensive API testing solution.
+A lightweight, easy-to-use framework for API testing.
 
 ## Features
-- REST and GraphQL support
-- Automated test generation
-- Performance testing
-- Contract testing
-- Mock server
-- CI/CD integration
+
+- Simple test syntax
+- HTTP request handling
+- Assertion utilities
+- Test runner
+- Example tests included
+
+## Tech Stack
+
+- **Language**: Node.js
+- **Testing**: Custom framework
+
+## Project Structure
+
+\`\`\`
+api-testing-framework/
+├── src/
+│   ├── framework.js     # Core framework
+│   └── utils/           # Assertions
+├── examples/            # Example tests
+└── package.json
+\`\`\`
+
+## Usage
+
+\`\`\`bash
+npm test
+\`\`\`
+
+## Example
+
+\`\`\`javascript
+const api = new APITestingFramework('https://api.example.com');
+
+api.test('GET /health', async () => {
+  const response = await api.request('GET', '/health');
+  api.expect(response.status).toBe(200);
+});
+\`\`\`
 
 ---
 
-**POWERED BY L8AB SYSTEMS** ⚡
+**POWERED BY L8AB SYSTEMS**
