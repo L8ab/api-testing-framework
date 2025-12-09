@@ -1,0 +1,10 @@
+{
+  "name": "api-testing-framework",
+  "version": "1.0.0",
+  "description": "API Testing Framework by L8ab Systems",
+  "main": "src/framework.js",
+  "scripts": {
+    "test": "node examples/basic-test.js"
+  },
+  "dependencies": {}
+}
